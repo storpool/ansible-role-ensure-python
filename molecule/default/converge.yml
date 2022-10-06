@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include storpool.ensure_python"
+      include_role:
+        name: "storpool.ensure_python"

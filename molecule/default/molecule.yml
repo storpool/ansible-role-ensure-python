@@ -1,0 +1,15 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: openstack
+platforms:
+  - name: ubuntu_1804
+    image: ubuntu-1804
+    flavor: m1.small
+    network: lab-vlan400
+    ssh_user: ubuntu
+provisioner:
+  name: ansible
+verifier:
+  name: ansible
