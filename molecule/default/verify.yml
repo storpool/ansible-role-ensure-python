@@ -22,6 +22,7 @@
   tasks:
     - apt:
         name: python-apt
+      become: yes
     - import_tasks: tasks/gather_packages.yml
     - assert:
         that:
@@ -32,6 +33,7 @@
   tasks:
     - apt:
         name: python3-apt
+      become: yes
     - import_tasks: tasks/gather_packages.yml
     - assert:
         that:
